@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style_final.css">
+</head>
+
+<body>
+    <!-- class container chứa toàn bộ nội dung web -->
+    <div class="container">
+        <div class="top-section">
+            <!-- class top-section chứa thanh search và thông tin nơi search theo real time -->
+            <div class="input-section">
+                <!-- form tìm kiếm -->
+                <h1>Weather App</h1>
+                <!-- Tên app -->
+                <form action="">
+                    <div class="form-input">
+                        <input id="city-input" type="text" placeholder="Search for a city..." autofocus />
+                        <!-- Search tên thành phố muốn xem -->
+                        <span id="error-msg"></span>
+                    </div>
+
+                    <div>
+                        <button id="weather-btn">Current weather</button>
+                        <!-- Nút Chọn xem thời tiết realtime -->
+                        <button id="forecast-btn">6 Day forecast</button>
+                        <!-- Nút chọn xem thời tiết trong 6 ngày -->
+                    </div>
+                </form>
+            </div>
+
+            <div class="weather-section" id="weather-card"></div>
+            <!--thời tiết real time -->
+        </div>
+
+        <div class="bottom-section"></div>
+        <!-- class botton chứa thông tin dự báo thời tiết trong 6 ngày tiếp theo -->
+    </div>
+    <script src="app_final.js"></script>
+</body>
+
+</html>
